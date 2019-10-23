@@ -1,1 +1,9 @@
-# LRF-Net
+# Learning Rich Features at High-Speed for Single-Shot Object Detection
+
+By Tiancai Wang†, Rao Muhammad Anwer†, Hisham Cholakkal, Fahad Shahbaz Khan, Yanwei Pang, Ling Shao
+
+† denotes equal contribution
+
+### Introduction
+Single-stage object detection methods have received sig-nificant attention recently due to their characteristic real-time  capabilities  and  high  detection  accuracies.   Gener-ally,  most existing single-stage detectors follow two com-mon practices: they employ a network backbone that is pre-trained on ImageNet for the classification task and use atop-down feature pyramid representation for handling scalevariations.  Contrary to common pre-training strategy, re-cent works have demonstrated the benefits of training fromscratch to reduce the task gap between classification andlocalization,  especially at high overlap thresholds.   How-ever, detection models trained from scratch require signifi-cantly longer training time compared to their typical fine-tuning based counterparts. We introduce a single-stage de-tection  framework  that  combines  the  advantages  of  bothfine-tuning  pre-trained  models  and  training  from  scratch.Our framework constitutes a standard network that uses apre-trained backbone and a parallel light-weight auxiliary network trained from scratch.   Further,  we argue that thecommonly used top-down pyramid representation only fo-cuses on passing high-level semantics from the top layers tobottom layers.  We introduce a bi-directional network thatefficiently circulates both low-/mid-level and high-level se-mantic information in the detection framework. 
+Experiments are performed on MS COCO and UAVDTdatasets.  Compared to the baseline, our detector achieivesan  absolute  gain  of  7.4%  and  4.2%  in  average  precision(AP) on MS COCO and UAVDT datasets, respectively us-ing VGG backbone. For a 300×300 input on the MS COCOtest set,  our detector with ResNet backbone surpasses ex-isting single-stage detection methods for single-scale infer-ence achieving 34.3 AP, while operating at an inference timeof 19 milliseconds on a single Titan X GPU. 
