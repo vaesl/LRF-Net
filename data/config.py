@@ -2,7 +2,7 @@ import os.path
 
 LRF_ROOT = os.path.dirname(os.getcwd())
 # access to the COCO dataset
-COCOdir = os.path.join('/home/zxy/', "data/coco/")
+COCOdir = os.path.join(LRF_ROOT, "data/coco/")
 
 # LRF CONFIGS
 COCO_300 = {
