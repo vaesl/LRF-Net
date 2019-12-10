@@ -13,7 +13,7 @@ Experiments are performed on MS COCO and UAVDT datasets. Compared to the baselin
 
 ```Shell
     LRFNet_ROOT=/path/to/clone/LRFNet
-    git clone https://github.com/vaesl/LRFNet $LRFNet_ROOT
+    git clone https://github.com/vaesl/LRF-Net $LRFNet_ROOT
 ```
 - The code was tested on Ubuntu 16.04, with [Anaconda](https://www.anaconda.com/download) Python 3.5/6 and [PyTorch]((http://pytorch.org/)) v0.3.1. 
 NVIDIA GPUs are needed for testing. After install Anaconda, create a new conda environment, activate the environment and install pytorch0.3.1.
