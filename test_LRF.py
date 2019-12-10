@@ -21,7 +21,7 @@ from utils.nms_wrapper import nms
 parser = argparse.ArgumentParser(description='Testing Learning Rich Features Network')
 parser.add_argument('-s', '--size', default='300', help='300 or 512 input size.')
 parser.add_argument('-d', '--dataset', default='COCO', help='Currently we only provide results on MS COCO')
-parser.add_argument('-m', '--trained_model', default='weights/COCO/LRF_COCO_300/Final_LRF_vgg_COCO.pth',
+parser.add_argument('-m', '--trained_model', default='weights/COCO/LRF_COCO_300/LRF_vgg_COCO_300.pth',
                     type=str, help='Trained state_dict file path to open')
 parser.add_argument('--save_folder', default='eval/', type=str, help='Dir to save results')
 parser.add_argument('--cuda', default=True, type=bool, help='Use cuda to test model')
